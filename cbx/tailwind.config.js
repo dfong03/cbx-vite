@@ -24,7 +24,7 @@ export default {
             },
         },
         backgroundImage: {
-            'hero': "url('./src/components/home/A-Hero/assets/Home_Page_Background.jpg')",
+            'hero': "url('./components/home/A-Hero/assets/Home_Page_Background.jpg')",
         },
     },
 },
