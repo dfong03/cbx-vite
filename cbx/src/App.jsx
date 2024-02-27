@@ -5,6 +5,7 @@ import ComingSoon from "./pages/ComingSoon";
 import LPLogin from "./pages/main/LPLogin";
 import ShowCompanies from "./components/team/companies/ShowCompany";
 import Recruiting from "./pages/main/Recruiting";
+import Team from "./pages/main/Team";
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
             <div className="bg-black">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/team" element={<ComingSoon />} />
+                    <Route path="/team" element={<Team />} />
                     <Route path="/portfolio" element={<ComingSoon />} />
                     <Route path="/partners" element={<ComingSoon />} />
                     <Route path="/partner-firms" element={<ComingSoon />} />
