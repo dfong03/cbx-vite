@@ -6,6 +6,7 @@ import LPLogin from "./pages/main/LPLogin";
 import ShowCompanies from "./components/team/companies/ShowCompany";
 import Recruiting from "./pages/main/Recruiting";
 import Team from "./pages/main/Team";
+import TeamMember from "./pages/sub/TeamMember";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/team" element={<Team />} />
+                    <Route path="/team/*" element={<TeamMember />} />
                     <Route path="/portfolio" element={<ComingSoon />} />
                     <Route path="/partners" element={<ComingSoon />} />
                     <Route path="/partner-firms" element={<ComingSoon />} />

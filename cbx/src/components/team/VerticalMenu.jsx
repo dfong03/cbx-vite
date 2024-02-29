@@ -2,7 +2,7 @@ import React from "react";
 
 const VerticalMenu = ({ currentFilter, setFilter }) => {
     function filterEquals(val) {
-        return (currentFilter.toLowerCase() === val.toLowerCase());
+        return currentFilter.toLowerCase() === val.toLowerCase();
     }
 
     function clickedMenu(name) {
@@ -18,7 +18,14 @@ const VerticalMenu = ({ currentFilter, setFilter }) => {
     const elements = (
         <div className="sticky bg-gray-500 text-white text-3xl top-0 h-screen">
             <div className="flex flex-col items-start justify-center w-full h-full ml-8 gap-8 font-extralight">
-                <span className="text-xl text-gray-300">OUR TEAMS</span>
+                <span
+                    className="text-xl text-gray-300 hover:text-gray-100 transition duration-300 ease-in-out hover:cursor-pointer"
+                    onClick={() => {
+                        setFilter("all");
+                    }}
+                >
+                    OUR TEAM
+                </span>
                 {teams.map((name) => (
                     <div
                         className={`hover:cursor-pointer hover:text-white transition duration-300 ease-in-out text-4xl select-none ${

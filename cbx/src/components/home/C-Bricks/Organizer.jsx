@@ -101,7 +101,7 @@ function Organizer() {
                         </p>
                         <br />
                         <br />
-                        <p className="font-bold text-center mt-8">
+                        <p className="text-center mt-8">
                             We’re not a club. We don’t exist for resume padding.
                             We’re a place where people who are not cut from the
                             average cloth can go to build momentum.
