@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const VerticalMenu = ({ currentFilter, setFilter }) => {
     function filterEquals(val) {
@@ -13,11 +13,19 @@ const VerticalMenu = ({ currentFilter, setFilter }) => {
         }
     }
 
+    function handleInput(value) {
+        if (value === "") {
+            setFilter("all")
+        } else {
+            setFilter(value)
+        }
+    }
+
     const teams = ["Investment", "Operations", "Advisors"];
 
     const elements = (
-        <div className="sticky bg-gray-500 text-white text-3xl top-0 h-screen">
-            <div className="flex flex-col items-start justify-center w-full h-full ml-8 gap-8 font-extralight">
+        <div className="sticky bg-gray-500 text-white text-3xl top-0 h-screen overflow-hidden">
+            <div className="flex flex-col items-start justify-center w-full h-full px-8 gap-8 font-extralight">
                 <span
                     className="text-xl text-gray-300 hover:text-gray-100 transition duration-300 ease-in-out hover:cursor-pointer"
                     onClick={() => {
@@ -38,6 +46,11 @@ const VerticalMenu = ({ currentFilter, setFilter }) => {
                         {name}
                     </div>
                 ))}
+                <input type="text" 
+                className="rounded-none focus:ring-transparent outline-none text-gray-300 
+                w-full bg-gray-500 placeholder:text-gray-400 caret-white border-b-2 border-gray-400 focus:border-white"
+                placeholder="Search our team"
+                onInput={e=>{handleInput(e.target.value)}}></input>
             </div>
         </div>
     );

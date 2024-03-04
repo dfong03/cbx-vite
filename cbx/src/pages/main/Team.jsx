@@ -14,7 +14,7 @@ const Team = () => {
                         <VerticalMenu currentFilter={currentFilter} setFilter={setFilter}/>
                     </div>
                     <div className="ml-[25vw] w-3/4 h-full">
-                        <Roster aspect={currentFilter} />
+                        <Roster aspect={currentFilter} setAspect={setFilter}/>
                     </div>
                 </div>
             </section>

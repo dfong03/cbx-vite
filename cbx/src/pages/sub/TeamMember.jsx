@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import NavBar from "../../components/globals/Transition-B/Transition-B";
 import Footer from "../../components/globals/static/Footer";
 import { people } from "../../components/team/teamIndex";
+import arrow from "../../components/team/arrow.svg";
+import { useNavigate } from "react-router-dom";
 
 const TeamMember = () => {
     let profile;
     const split_url = window.location.href.split("/");
+    const nav = useNavigate();
 
     for (let person of people) {
         if (person.redirect == split_url[split_url.length - 1]) {
@@ -14,12 +17,23 @@ const TeamMember = () => {
         }
     }
 
+    function backToTeams() {
+        nav("/team")
+    }
+
     return split_url.length != 5 ||
         split_url[split_url.length - 2] != "team" ? (
         <></>
     ) : (
         <div className="w-screen absolute top-0 left-0 mt-20 overflow-hidden">
             <NavBar />
+            <div className="absolute w-screen flex flex-row justify-end items-center mt-[15vh] opacity-30 hover:opacity-100 hover:cursor-pointer group transition duration-500 ease-in-out"
+            onClick={()=>{backToTeams()}}>
+                <span className="mr-8 text-4xl italic font-semibold opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out">
+                    Back to Teams
+                </span>
+                <img src={arrow} className="h-12 mr-[5vw]" />
+            </div>
             <section className="h-full w-full flex flex-row justify-center items-center mx-[5vw] my-[15vh]">
                 <img
                     src={profile.profile}
@@ -36,7 +50,9 @@ const TeamMember = () => {
                     {profile.description
                         .split("\n")
                         .map((sectionDescription) => (
-                            <p className="mt-4 mr-[8vw]">{sectionDescription}</p>
+                            <p className="mt-4 mr-[8vw]">
+                                {sectionDescription}
+                            </p>
                         ))}
                 </div>
             </section>
