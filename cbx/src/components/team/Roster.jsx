@@ -28,7 +28,7 @@ const Roster = ({ aspect, setAspect }) => {
     }
 
     return (
-        <section className="bg-gray-100 flex flex-col justify-center items-center text-black text-4xl absolute">
+        <section className="bg-gray-100 h-[200vh] w-3/4 flex flex-col justify-start items-center text-black text-4xl absolute">
             <div className="mt-28 w-full ml-16">
                 <div
                     className={`mb-4 text-sm flex flex-row w-full gap-3 ${
