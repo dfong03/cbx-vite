@@ -4,7 +4,7 @@ import Footer from "../../components/globals/static/Footer";
 import CGrid from "../../components/portfolio/CGrid";
 const Portfolio = () => {
     return (
-        <div className="absolute top-0 left-0">
+        <div className="absolute top-0 left-0 bg-black">
             <NavBar />
             <CGrid />
             <Footer />

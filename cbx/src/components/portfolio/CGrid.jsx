@@ -29,8 +29,10 @@ const CGrid = () => {
     // }
 
     return (
-        <section className="bg-gray-100 h-[200vh] flex flex-col justify-start items-center text-black text-4xl">
-            <div className="mt-28 w-full ml-16">
+        <section className="bg-gray-100 flex flex-col justify-start items-center text-black text-4xl">
+            <span className="mt-48 mb-12 w-3/4 text-left font-light font-sans text-7xl">CBX Partners Portfolio</span>
+            <div className="h-[2px] w-3/4 bg-gray-400 mb-20"/>
+            {/* <div className="mt-28 w-full ml-16">
                 <div
                     className={`mb-4 text-sm flex flex-row w-full gap-3`}
                 >
@@ -84,30 +86,18 @@ const CGrid = () => {
                         MANAGING DIRECTOR
                     </button>
                 </div>
-            </div>
+            </div> */}
 
             {/* Profiles */}
-            <div className="w-full h-full grid grid-cols-4 overflow-hidden px-4">
+            <div className="w-3/4 h-full grid grid-cols-4 overflow-hidden gap-8 mb-20">
                 {companies.map((tab) => (
                     <div
-                        className={`m-4 rounded-md overflow-hidden hover:cursor-pointer group`}
+                        className={`rounded-lg overflow-hidden hover:cursor-pointer group hover:opacity-70 transition-opacity duration-300 ease-in-out`}
                     >
-                        <div className="rounded-lg bg-white w-full">
+                        <div className=" bg-white w-[18vw] h-[16vw] overflow-hidden rounded-lg">
                             <img
                                 src={tab.profile}
-                                className="brightness-100 contrast-75 saturate-100 scale-100 grayscale"
-                            />
-                        </div>
-                        <div className="flex flex-col text-left mt-4">
-                            <span className="text-2xl font-semibold group-hover:underline">
-                                {tab.name}
-                            </span>
-                            <span className="text-xl">{tab.title}</span>
-                        </div>
-                        <div className="w-full flex flex-row justify-end items-center -mt-6 mb-4">
-                            <img
-                                src={arrow}
-                                className="h-4 left-0 group-hover:visible invisible"
+                                className="bg-cover w-full"
                             />
                         </div>
                     </div>

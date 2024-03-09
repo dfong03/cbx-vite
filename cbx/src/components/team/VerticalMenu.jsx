@@ -24,10 +24,10 @@ const VerticalMenu = ({ currentFilter, setFilter }) => {
     const teams = ["Investment", "Operations", "Advisors"];
 
     const elements = (
-        <div className="sticky bg-gray-500 text-white text-3xl top-0 h-screen overflow-hidden">
+        <div className="sticky bg-gray-100 text-gray-900 text-3xl top-0 h-screen overflow-hidden">
             <div className="flex flex-col items-start justify-center w-full h-full px-8 gap-8 font-extralight">
                 <span
-                    className="text-xl text-gray-300 hover:text-gray-100 transition duration-300 ease-in-out hover:cursor-pointer"
+                    className="text-xl text-gray-900 hover:text-gray-400 transition duration-300 ease-in-out hover:cursor-pointer"
                     onClick={() => {
                         setFilter("all");
                     }}
@@ -36,19 +36,19 @@ const VerticalMenu = ({ currentFilter, setFilter }) => {
                 </span>
                 {teams.map((name) => (
                     <div
-                        className={`hover:cursor-pointer hover:text-white transition duration-300 ease-in-out text-4xl select-none ${
+                        className={`hover:cursor-pointer hover:text-gray-400 transition duration-300 ease-in-out text-4xl select-none ${
                             filterEquals(name)
-                                ? "underline text-white"
-                                : "no-underline text-gray-300"
+                                ? "underline text-gray-400"
+                                : "no-underline text-gray-900"
                         }`}
                         onClick={() => clickedMenu(name)}
-                    >
+t                    >
                         {name}
                     </div>
                 ))}
                 <input type="text" 
-                className="rounded-none focus:ring-transparent outline-none text-gray-300 
-                w-full bg-gray-500 placeholder:text-gray-400 caret-white border-b-2 border-gray-400 focus:border-white"
+                className="rounded-none focus:ring-transparent outline-none ext-gray-900 
+                w-full bg-gray-100 placeholder:text-gray-400 caret-gray-800 border-b-2 border-gray-400 focus:border-gray-300"
                 placeholder="Search our team"
                 onInput={e=>{handleInput(e.target.value)}}></input>
             </div>
