@@ -3,4 +3,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/rbtxjlmy/public_html/
-    - /bin/cp -r /home2/rbtxjlmy/repositories/cbx-vite/cbx/dist/* $DEPLOYPATH
+    - /bin/cp -R /home2/rbtxjlmy/repositories/cbx-vite/cbx/dist/* $DEPLOYPATH
