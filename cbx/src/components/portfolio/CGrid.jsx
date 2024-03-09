@@ -89,7 +89,7 @@ const CGrid = () => {
             </div> */}
 
             {/* Profiles */}
-            <div className="w-3/4 h-full grid grid-cols-4 overflow-hidden gap-8 mb-20">
+            <div className="w-3/4 h-screen grid grid-cols-4 overflow-hidden gap-8 mb-20">
                 {companies.map((tab) => (
                     <div
                         className={`rounded-lg overflow-hidden hover:cursor-pointer group hover:opacity-70 transition-opacity duration-300 ease-in-out`}
