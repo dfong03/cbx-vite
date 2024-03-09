@@ -7,6 +7,7 @@ import ShowCompanies from "./components/team/companies/ShowCompany";
 import Recruiting from "./pages/main/Recruiting";
 import Team from "./pages/main/Team";
 import TeamMember from "./pages/sub/TeamMember";
+import Portfolio from "./pages/main/Portfolio";
 
 function App() {
     return (
@@ -16,7 +17,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/team" element={<Team />} />
                     <Route path="/team/*" element={<TeamMember />} />
-                    <Route path="/portfolio" element={<ComingSoon />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/partners" element={<ComingSoon />} />
                     <Route path="/partner-firms" element={<ComingSoon />} />
                     <Route path="/insights" element={<ComingSoon />} />
