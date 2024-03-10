@@ -49,7 +49,7 @@ t                    >
                 <input type="text" 
                 className="rounded-none focus:ring-transparent outline-none ext-gray-900 
                 w-full bg-gray-100 placeholder:text-gray-400 caret-gray-800 border-b-2 border-gray-400 focus:border-gray-300"
-                placeholder="Search our team"
+                placeholder="Search"
                 onInput={e=>{handleInput(e.target.value)}}></input>
             </div>
         </div>

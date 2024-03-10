@@ -29,7 +29,7 @@ const Roster = ({ aspect, setAspect }) => {
 
     return (
         <section className="bg-gray-100 h-[200vh] w-3/4 flex flex-col justify-start items-center text-black text-4xl absolute">
-            <div className="mt-28 w-full ml-16">
+            <div className="mt-24 w-full ml-16">
                 <div
                     className={`mb-4 text-sm flex flex-row w-full gap-3 ${
                         aspect.toLowerCase() == "advisors" ||
@@ -53,15 +53,62 @@ const Roster = ({ aspect, setAspect }) => {
                         className="h-8 text-black border-black border-2 px-4 
                                             tracking-wide font-semibold hover:border-transparent hover:bg-black
                                           hover:text-white transition duration-500 ease-in-out"
+                        onClick={() => {
+                            setAspect("tech-board");
+                        }}
                     >
-                        TECHNOLOGY ADVISORY BOARD
+                        TECHNICAL ADVISORY BOARD
                     </button>
                 </div>
             </div>
 
             <div className="w-full ml-16">
                 <div
-                    className={`mt-4 mb-4 text-sm flex flex-row w-full gap-3 ${
+                    className={`mb-4 text-sm flex flex-row w-full gap-3 ${
+                        aspect.toLowerCase() == "operations" ||
+                        aspect.toLowerCase() == "communications" ||
+                        aspect.toLowerCase() == "legal" ||
+                        aspect.toLowerCase() == "portfolio"
+                            ? "visible"
+                            : "hidden"
+                    }`}
+                >
+                    <button
+                        className="h-8 text-black border-black border-2 px-4 
+                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                                          hover:text-white transition duration-500 ease-in-out"
+                        onClick={() => {
+                            setAspect("operations");
+                        }}
+                    >
+                        COMMUNICATIONS & ENGINEERING
+                    </button>
+                    <button
+                        className="h-8 text-black border-black border-2 px-4 
+                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                                          hover:text-white transition duration-500 ease-in-out"
+                        onClick={() => {
+                            setAspect("operations");
+                        }}
+                    >
+                        LEGAL
+                    </button>
+                    <button
+                        className="h-8 text-black border-black border-2 px-4 
+                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                                          hover:text-white transition duration-500 ease-in-out"
+                        onClick={() => {
+                            setAspect("operations");
+                        }}
+                    >
+                        PORTFOLIO OPERATIONS
+                    </button>
+                </div>
+            </div>
+
+            <div className="w-full ml-16">
+                <div
+                    className={`mb-4 text-sm flex flex-row w-full gap-3 ${
                         aspect.toLowerCase() == "investment" ||
                         aspect.toLowerCase() == "analyst" ||
                         aspect.toLowerCase() == "associate" ||
@@ -76,40 +123,20 @@ const Roster = ({ aspect, setAspect }) => {
                                             tracking-wide font-semibold hover:border-transparent hover:bg-black
                                           hover:text-white transition duration-500 ease-in-out"
                         onClick={() => {
-                            setAspect("advisory-board");
+                            setAspect("investment");
                         }}
                     >
-                        ANALYST
+                        INVESTOR
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-4 
                                             tracking-wide font-semibold hover:border-transparent hover:bg-black
                                           hover:text-white transition duration-500 ease-in-out"
                         onClick={() => {
-                            setAspect("advisory-board");
+                            setAspect("investment");
                         }}
                     >
-                        ASSOCIATE
-                    </button>
-                    <button
-                        className="h-8 text-black border-black border-2 px-4 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
-                        onClick={() => {
-                            setAspect("advisory-board");
-                        }}
-                    >
-                        PRINCIPAL
-                    </button>
-                    <button
-                        className="h-8 text-black border-black border-2 px-4 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
-                        onClick={() => {
-                            setAspect("advisory-board");
-                        }}
-                    >
-                        MANAGING DIRECTOR
+                        LEAD INVESTOR
                     </button>
                 </div>
             </div>
