@@ -32,7 +32,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="z-50 bg-black w-full flex justify-between items-center fixed top-0 left-0 sm:hidden h-20">
+            <nav className="z-50 bg-black flex justify-between items-center fixed top-0 left-0 sm:hidden h-20 w-screen">
                 <div className="overflow-hidden pt-4 flex justify-start font-poppins my-auto h-20">
                     <Link
                         className={`transition duration-[2000ms] ${

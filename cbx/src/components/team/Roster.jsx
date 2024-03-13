@@ -91,7 +91,7 @@ const Roster = ({ aspect, setAspect }) => {
                             setAspect("operations");
                         }}
                     >
-                        LEGAL
+                        PORTFOLIO OPERATIONS
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-4 
@@ -101,7 +101,27 @@ const Roster = ({ aspect, setAspect }) => {
                             setAspect("operations");
                         }}
                     >
-                        PORTFOLIO OPERATIONS
+                        INVESTOR RELATIONS
+                    </button>
+                    <button
+                        className="h-8 text-black border-black border-2 px-4 
+                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                                          hover:text-white transition duration-500 ease-in-out"
+                        onClick={() => {
+                            setAspect("operations");
+                        }}
+                    >
+                        TALENT
+                    </button>
+                    <button
+                        className="h-8 text-black border-black border-2 px-4 
+                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                                          hover:text-white transition duration-500 ease-in-out"
+                        onClick={() => {
+                            setAspect("operations");
+                        }}
+                    >
+                        LEGAL
                     </button>
                 </div>
             </div>
@@ -157,7 +177,7 @@ const Roster = ({ aspect, setAspect }) => {
                         <div className="rounded-lg bg-white w-full">
                             <img
                                 src={tab.profile}
-                                className="brightness-100 contrast-75 saturate-100 scale-100 grayscale"
+                                className="brightness-100 contrast-100 scale-100"
                             />
                         </div>
                         <div className="flex flex-col text-left mt-4">

@@ -1,5 +1,7 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import "../../../index.css";
+
 export default function RecruitmentForm() {
     const [file, setFile] = useState("");
     const [name, setName] = useState("");
@@ -13,6 +15,24 @@ export default function RecruitmentForm() {
             setFile(files[0]);
         }
     };
+
+    // useEffect (() => {
+    //     console.log(import.meta.env.VITE_EMAIL_APIKEY);
+    //     sendEmailValidationRequest("liuisaac05@gmail.com");
+    //   return () => {}
+    // }, [sending])
+
+    // const apiURL = `https://emailvalidation.abstractapi.com/v1/?api_key=${import.meta.env.VITE_EMAIL_APIKEY}`;
+
+    // const sendEmailValidationRequest = async (email) => {
+    //     try {
+    //         const response = await axios.request(apiURL + "&email=" + email);
+    //         const data = await response.json();
+    //         console.log(response);
+    //     } catch (error) {
+    //         throw error;
+    //     }
+    // };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -65,12 +85,12 @@ export default function RecruitmentForm() {
                     </span>
                     <br />
                     <br />
-                    <label htmlFor="name">Name | Investment/Operations: </label>
+                    <label htmlFor="name">Name: </label>
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="Name | Investment/Operations"
+                        placeholder="Name"
                         className="bg-transparent border-b border-black focus:border-white focus:outline-none text-black w-full"
                         onChange={(event) => setName(event.target.value)}
                     />
@@ -88,6 +108,15 @@ export default function RecruitmentForm() {
                     />
                     <br />
                     <br />
+
+                    <label>Team: </label>
+                    <select className="mt-2 w-full opacity-50 outline-none mb-10 rounded-none border-b border-black">
+                        <option disabled selected value>
+                        Select one of the following teams:
+                        </option>
+                        <option>Investment</option>
+                        <option>Operations</option>
+                    </select>
 
                     <label htmlFor="fileInput">Resume: </label>
                     <label

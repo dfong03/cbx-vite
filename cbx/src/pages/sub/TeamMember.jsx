@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "../../components/globals/Transition-B/Transition-B";
+import NavBar from "../../components/globals/Transition-B/Navbar";
 import Footer from "../../components/globals/static/Footer";
 import { people } from "../../components/team/teamIndex";
 import arrow from "../../components/team/arrow.svg";

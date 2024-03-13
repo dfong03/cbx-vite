@@ -4,7 +4,6 @@ const Insights = () => {
     return (
         <>
             <div>
-                <NavBar />
                 <div
                     style={{
                         display: "flex",
