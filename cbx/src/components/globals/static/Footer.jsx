@@ -83,10 +83,11 @@ const Footer = () => {
                                 <img
                                     style={{
                                         width: "2rem",
-                                        marginRight: "4rem",
+                                        marginRight: "4.5rem",
                                     }}
                                     src={email}
                                     alt=""
+                                    className="scale-150"
                                 />
                             </a>
                         </li>
@@ -117,6 +118,7 @@ const Footer = () => {
                                         width: "2rem",
                                         marginRight: "4rem",
                                     }}
+                                    className="scale-125"
                                     src={twitter}
                                     alt=""
                                 />
