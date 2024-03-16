@@ -2,7 +2,7 @@ import React from "react";
 
 const ComingSoon = () => {
     return (
-        <div className="absolute left-0 top-0">
+        <div className="left-0 top-0">
             <div
                 style={{
                     display: "flex",

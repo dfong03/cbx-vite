@@ -6,13 +6,12 @@ import Recruitment from "./../../components/home/D-Recruitment/Recruitment.jsx";
 import RecruitmentForm from "../../components/home/E-Form/RecruitForm.jsx";
 const Home = () => {
     return (
-        <div className="w-screen top-0 left-0 absolute bg-black">
+        <div className="w-screen top-0 left-0 bg-black">
             {/* Render components for the '/' route */}
             <TransitionA />
             <Metrics />
             <Organizer />
             <Recruitment />
-            <RecruitmentForm />
         </div>
     );
 };

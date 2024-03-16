@@ -3,7 +3,7 @@ import LoginPage from "../../components/lplogin/loginpage";
 
 const LPLogin = () => {
     return (
-        <div className="w-screen absolute top-0 left-0">
+        <div className="w-screen top-0 left-0">
             <LoginPage />
         </div>
     );

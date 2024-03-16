@@ -18,12 +18,12 @@ const CookieNotice = ({ onAccept, acceptedState }) => {
     return (
         <motion.div
             initial="hidden"
-            whileInView={ acceptedState ? "visible" : "hidden" }
+            whileInView={acceptedState ? "visible" : "hidden"}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 1*acceptedState }}
+            transition={{ duration: 0.5, delay: 1 * acceptedState }}
             variants={{
-                visible: { y:0 },
-                hidden: { y:"100%" },
+                visible: { y: 0 },
+                hidden: { y: "100%" },
             }}
             className="fixed bottom-0 left-0 w-screen bg-black text-white p-2 text-center z-30"
         >
@@ -32,7 +32,13 @@ const CookieNotice = ({ onAccept, acceptedState }) => {
                 accept our use of cookies.
             </p>
             <div className="w-screen absolute flex flex-row justify-end items-start">
-                <img src={X} className="h-6 mr-8 hover:cursor-pointer" onClick={()=>{handleAccept()}}/>
+                <img
+                    src={X}
+                    className="h-6 mr-8 hover:cursor-pointer"
+                    onClick={() => {
+                        handleAccept();
+                    }}
+                />
             </div>
             <button
                 onClick={handleAccept}
@@ -53,8 +59,11 @@ const Footer = () => {
     };
 
     return (
-        <footer className="mt-8 p-8 static bottom-0 bg-black text-white w-screen overflow-hidden">
-            <CookieNotice onAccept={handleCookieAccept} acceptedState={showCookieNotice}/>
+        <footer className="p-8 pt-16 bg-black text-white w-screen">
+            <CookieNotice
+                onAccept={handleCookieAccept}
+                acceptedState={showCookieNotice}
+            />
             <div className="grid grid-cols-9 gap-4">
                 <div className="col-start-1 col-3 w-64">
                     <img
@@ -149,12 +158,21 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div className="grid grid-cols-9 mt-5 text-left">
-                <div className="col-start-1 col-span-2">
+            <div className="grid grid-cols-9 mt-2 text-left">
+                <div className="col-start-1 col-span-3">
                     <p>
-                        © {currentYear} CBX Capital Partners LP. All Rights
-                        Reserved.
+                        © {currentYear} CBX Capital Partners Management LLC. All
+                        Rights Reserved.
                     </p>
+                </div>
+                <div className="flex flex-row col-start-1 col-span-3 text-sm gap-2 text-gray-300">
+                    <div className="hover:underline">
+                        <a href="">Legal & Regulatory Information</a>
+                    </div>
+                    <span>|</span>
+                    <div className="hover:underline">
+                        <a href="">Terms & Conditions</a>
+                    </div>
                 </div>
             </div>
         </footer>

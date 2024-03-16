@@ -32,7 +32,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="z-50 bg-black flex justify-between items-center fixed top-0 left-0 sm:hidden h-20 w-screen">
+            <nav className="z-50 bg-black flex justify-between items-center fixed top-0 left-0 lg:hidden h-20 w-screen">
                 <div className="overflow-hidden pt-4 flex justify-start font-poppins my-auto h-20">
                     <Link
                         className={`transition duration-[2000ms] ${
@@ -52,7 +52,7 @@ const NavBar = () => {
                 </div>
                 <div>
                     <img
-                        className="object-contain mr-5 h-8 hover:cursor-pointer opacity-80"
+                        className="object-contain mr-12 h-8 hover:cursor-pointer opacity-80"
                         src={hamburger}
                         alt="CBX Partners Logo"
                         onClick={() => setMenu(!menu)}
@@ -81,7 +81,7 @@ const NavBar = () => {
                                 className={`text-4xl tracking-widest font-thin ${
                                     textWhite ? "text-white" : "text-[#bababa]"
                                 }`}
-                                onTouchStart={()=>setMenu(false)}
+                                onClick={()=>setMenu(!menu)}
                                 to={`/${nav.id}`}
                             >
                                 {nav.title.toLocaleUpperCase()}
@@ -97,7 +97,7 @@ const NavBar = () => {
                 }}
                 animate={hidden ? "hidden" : "visible"}
                 transition={{ duration: 0.7, ease: "easeInOut" }}
-                className="z-50 bg-black w-full sm:flex justify-between items-center navbar fixed top-0 hidden"
+                className="z-50 bg-black w-full lg:flex justify-between items-center navbar fixed top-0 hidden"
             >
                 <div className="overflow-hidden pt-4 flex justify-start font-poppins my-auto h-20">
                     <Link

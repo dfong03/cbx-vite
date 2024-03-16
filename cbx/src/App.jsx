@@ -13,14 +13,14 @@ import NavBar from "./components/globals/Transition-B/Navbar";
 
 function App() {
     return (
-        <div className="absolute w-screen left-0">
-            <div className="bg-black overflow-x-hidden w-screen left-0 h-full">
-                <NavBar />
+        <div className="absolute top-0 left-0 w-screen h-full">
+            <NavBar />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/team" element={<Team />} />
                     <Route path="/team/*" element={<TeamMember />} />
-                    <Route path="/portfolio" element={<ComingSoon />} />
+                    <Route path="/investments" element={<ComingSoon />} />
+                    <Route path="/news" element={<ComingSoon />} />
                     <Route path="/partners" element={<ComingSoon />} />
                     <Route path="/partner-firms" element={<ComingSoon />} />
                     <Route path="/insights" element={<ComingSoon />} />
@@ -29,6 +29,7 @@ function App() {
                     <Route path="/lp-login" element={<LPLogin />} />
                     <Route path="/company/:name" element={<ShowCompanies />} />
                 </Routes>
+            <div className="bottom-0 w-full z-50">
                 <Footer />
             </div>
         </div>

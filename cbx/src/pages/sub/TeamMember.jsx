@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "../../components/globals/Transition-B/Navbar";
 import Footer from "../../components/globals/static/Footer";
 import { people } from "../../components/team/teamIndex";
 import arrow from "../../components/team/arrow.svg";
@@ -26,7 +25,6 @@ const TeamMember = () => {
         <></>
     ) : (
         <div className="w-screen absolute top-0 left-0 mt-20 overflow-hidden">
-            <NavBar />
             <div className="absolute w-screen flex flex-row justify-end items-center mt-[15vh] opacity-30 hover:opacity-100 hover:cursor-pointer group transition duration-500 ease-in-out"
             onClick={()=>{backToTeams()}}>
                 <span className="mr-8 text-4xl italic font-semibold opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out">

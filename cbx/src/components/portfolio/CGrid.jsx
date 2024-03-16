@@ -30,7 +30,7 @@ const CGrid = () => {
 
     return (
         <section className="bg-gray-100 flex flex-col justify-start items-center text-black text-4xl">
-            <span className="mt-48 mb-12 w-3/4 text-left font-light font-sans text-7xl">CBX Partners Portfolio</span>
+            <span className="mt-48 mb-12 w-3/4 text-left font-light font-sans text-7xl">CBX Partners Investments</span>
             <div className="h-[2px] w-3/4 bg-gray-400 mb-20"/>
             {/* <div className="mt-28 w-full ml-16">
                 <div

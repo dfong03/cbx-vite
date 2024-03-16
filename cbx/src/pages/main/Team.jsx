@@ -4,7 +4,7 @@ import VerticalMenu from "../../components/team/VerticalMenu";
 const Team = () => {
     const [currentFilter, setFilter] = useState("all");
     return (
-        <div className="absolute top-0 left-0">
+        <div className="top-0 left-0">
             <section>
                 <div className="w-screen h-[200vh] overflow-hidden -mb-8">
                     <div className="w-1/4 h-[200vh] absolute">
