@@ -148,16 +148,6 @@ const Roster = ({ aspect, setAspect }) => {
                     >
                         INVESTOR
                     </button>
-                    <button
-                        className="h-8 text-black border-black border-2 px-4 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
-                        onClick={() => {
-                            setAspect("investment");
-                        }}
-                    >
-                        LEAD INVESTOR
-                    </button>
                 </div>
             </div>
 
