@@ -72,9 +72,9 @@ const Footer = () => {
                         alt="CBX Partners Logo"
                     />
                 </div>
-                <div className="col-start-7 mx-3">
+                <div className="col-start-8 mx-3">
                     <ul className="flex items-center">
-                        <li>
+                        {/* <li>
                             <a
                                 href="www.gmail.com"
                                 target="_blank"
@@ -90,8 +90,8 @@ const Footer = () => {
                                     className="scale-150"
                                 />
                             </a>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                             <a
                                 href="www.facebook.com"
                                 target="_blank"
@@ -106,7 +106,7 @@ const Footer = () => {
                                     alt=""
                                 />
                             </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a
                                 href="https://twitter.com/i/flow/login?redirect_after_login=%2Fcbxpartners"
@@ -161,13 +161,13 @@ const Footer = () => {
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="grid grid-cols-9 mt-2 text-left">
-                <div className="col-start-1 col-span-3">
+                <div className="col-start-1 col-span-8">
                     <p>
                         © {currentYear} CBX Capital Partners Management LLC. All
                         Rights Reserved.
                     </p>
                 </div>
-                <div className="flex flex-row col-start-1 col-span-3 text-sm gap-2 text-gray-300">
+                <div className="flex flex-row col-start-8 ml-20 text-nowrap -mt-6 col-span-3 text-sm gap-2 text-gray-300">
                     <div className="hover:underline">
                         <a href="">Legal & Regulatory Information</a>
                     </div>
