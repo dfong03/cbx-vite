@@ -118,7 +118,7 @@ export default function RecruitmentForm() {
                             accept=".pdf"
                         />
                     </label>
-                    <div id="fileNameDisplay" className="text-black mt-2">
+                    <div id="fileNameDisplay" className="text-black mt-2 text-clip">
                         {file ? `Selected file: ${file.name}` : ""}
                     </div>
                     <br />
