@@ -32,7 +32,7 @@ export default function RecruitmentForm() {
             setSending(true);
             try {
                 await axios.post(
-                    "http://cbx-backend-e5909b4449e5.herokuapp.com/team/sendpdf",
+                    "https://cbx-backend-e5909b4449e5.herokuapp.com/team/sendpdf",
                     formData,
                     {
                         headers: {
