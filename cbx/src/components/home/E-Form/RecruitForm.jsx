@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import check from "./greenCheckMark.svg";
 import "../../../index.css";
 
 export default function RecruitmentForm() {
@@ -8,6 +9,7 @@ export default function RecruitmentForm() {
     const [email, setEmail] = useState("");
     // submit button is disabled while sending
     const [sending, setSending] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
 
     const handleFileChange = (event) => {
         const files = event.target.files;
@@ -15,24 +17,6 @@ export default function RecruitmentForm() {
             setFile(files[0]);
         }
     };
-
-    // useEffect (() => {
-    //     console.log(import.meta.env.VITE_EMAIL_APIKEY);
-    //     sendEmailValidationRequest("liuisaac05@gmail.com");
-    //   return () => {}
-    // }, [sending])
-
-    // const apiURL = `https://emailvalidation.abstractapi.com/v1/?api_key=${import.meta.env.VITE_EMAIL_APIKEY}`;
-
-    // const sendEmailValidationRequest = async (email) => {
-    //     try {
-    //         const response = await axios.request(apiURL + "&email=" + email);
-    //         const data = await response.json();
-    //         console.log(response);
-    //     } catch (error) {
-    //         throw error;
-    //     }
-    // };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -56,9 +40,11 @@ export default function RecruitmentForm() {
                         },
                     }
                 );
-                alert(
-                    "PDF sent successfully, thank you! If your application is successful, we will be in contact via email."
-                );
+
+                setSubmitted(true);
+                // alert(
+                //     "PDF sent successfully, thank you! If your application is successful, we will be in contact via email."
+                // );
             } catch (error) {
                 alert("Error sending PDF");
                 console.error(error);
@@ -75,13 +61,13 @@ export default function RecruitmentForm() {
             <section className="h-screen flex flex-col justify-center items-center text-black">
                 {/* Note: The action functionality for form submission is not yet implemented. */}
                 <form
-                    className="flex flex-col items-start"
+                    className={`flex flex-col items-start ${submitted ? "absolute opacity-0 transition duration-500 ease-linear" : "opacity-100 z-10"}`}
                     action="/submit-form"
                     method="post"
                     onSubmit={handleSubmit}
                 >
                     <span className="font-bold text-3xl text-black">
-                        General Resume Drop 2024
+                        Resume Drop 2024
                     </span>
                     <br />
                     <br />
@@ -112,7 +98,7 @@ export default function RecruitmentForm() {
                     <label>Team: </label>
                     <select className="mt-2 w-full opacity-50 outline-none mb-10 rounded-none border-b border-black">
                         <option disabled selected value>
-                        Select one of the following teams:
+                            Select one of the following teams:
                         </option>
                         <option>Investment</option>
                         <option>Operations</option>
@@ -141,10 +127,19 @@ export default function RecruitmentForm() {
                     <input
                         type="submit"
                         value="Submit"
-                        className="hover:font-bold bg-gray-500 text-white py-2 px-4 rounded w-full"
+                        className={`hover:font-bold bg-gray-500 text-white py-2 px-4 rounded w-full ${sending ? "opacity-60" : "opacity-100"}`}
                         disabled={sending}
                     />
                 </form>
+
+                {/* /checkmarker */}
+                <div className={`flex flex-col items-center justify-center ${submitted ? "opacity-100 transition duration-1000 ease-linear delay-[800ms]" : "absolute opacity-0"}`}>
+                    <img src={check} className="h-36"/>
+                    <p className="flex flex-col font-light text-4xl mt-10">
+                    <span className="font-bold">You've successfully applied!</span>
+                    <span className="mt-2 w-3/5 text-center mx-auto">We've successfully recieved your application. If your application is successful, we will be in contact via email.</span>
+                    </p>
+                </div>
             </section>
         </div>
     );
