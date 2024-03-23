@@ -3,6 +3,7 @@ import axios from "axios";
 import "./loginpage.css";
 // import Dashboard from "../depr/AdminPages/adminDashboard";
 import background from "./LP_Login.jpeg";
+import cbx from "./CBX_White.png";
 const LoginPage = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -97,7 +98,7 @@ const LoginPage = () => {
     // };
 
     // return !isLoggedIn ? (
-        return (
+    return (
         <div
             style={{
                 backgroundImage: `url(${background})`,
@@ -108,36 +109,46 @@ const LoginPage = () => {
             }}
         >
             <div className="w-screen h-screen flex flex-row justify-center items-center">
-                <div className="login-container sm:w-[40vw] w-[80vw] flex flex-col">
-                    <div className="input-group w-full ">
-                        <label>Email:</label>
+                <div className="bg-white rounded-sm w-[30vw] flex flex-col justify-start items-center overflow-hidden mt-16">
+                    <div className="flex flex-col justify-center items-start w-4/5 mt-8">
+                        <div className="w-full flex flex-row justify-center">
+                            <img src={cbx} className="h-16 -ml-4" />
+                        </div>
+                        <span className="font-semibold text-3xl mt-10">
+                            Sign in
+                        </span>
+                        <div className="w-full flex flex-col justify-start items-start mt-8">
+                            <input
+                                className="border-b-2 border-gray-300 placeholder-slate-400 focus:outline-none"
+                                placeholder="Email:"
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                        </div>
+                        <div className="w-full flex flex-col justify-start items-start mt-8">
+                            <input
+                                className="border-b-2 border-gray-300 placeholder-slate-400 focus:outline-none"
+                                placeholder="Password:"
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
                         <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                            className="bg-gray-200 w-1/2 my-16"
+                            type="button"
+                            // onClick={handleLogin}
+                            value={"Login"}
                         />
+                        {attemptedLogin && (
+                            <p className="error-message">{`${message}`}</p>
+                        )}
                     </div>
-                    <div className="input-group">
-                        <label>Password:</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                    </div>
-                    <input
-                        className={"login-button"}
-                        type="button"
-                        // onClick={handleLogin}
-                        value={"Login"}
-                    />
-                    {attemptedLogin && (
-                        <p className="error-message">{`${message}`}</p>
-                    )}
                 </div>
             </div>
         </div>
-        )
+    );
     // ) : (
     //     <Dashboard onLogout={handleLogout} accessToken={accessToken} />
     // );
