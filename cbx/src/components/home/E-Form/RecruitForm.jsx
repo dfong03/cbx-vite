@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import check from "./greenCheckMark.svg";
+import check from "./greenCheckMark.png";
 import "../../../index.css";
 
 export default function RecruitmentForm() {
