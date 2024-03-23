@@ -20,36 +20,42 @@ export default function RecruitmentForm() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
         if (file && email && name && !sending) {
-            // prepare form data for sending
-            const formData = new FormData();
-            formData.append("file", file);
-            formData.append("ApplicantEmail", email);
-            formData.append("Name", name);
+            if (
+                email.split("@").length != 2 ||
+                email.split("@")[1] != "columbia.edu"
+            ) {
+                alert("Not a valid Columbia email address");
+            } else {
+                // prepare form data for sending
+                const formData = new FormData();
+                formData.append("file", file);
+                formData.append("ApplicantEmail", email);
+                formData.append("Name", name);
 
-            // start sending process
-            setSending(true);
-            try {
-                await axios.post(
-                    "https://cbx-backend-e5909b4449e5.herokuapp.com/team/sendpdf",
-                    formData,
-                    {
-                        headers: {
-                            "Content-Type": "multipart/form-data",
-                        },
-                    }
-                );
+                // start sending process
+                setSending(true);
+                try {
+                    await axios.post(
+                        "https://cbx-backend-e5909b4449e5.herokuapp.com/team/sendpdf",
+                        formData,
+                        {
+                            headers: {
+                                "Content-Type": "multipart/form-data",
+                            },
+                        }
+                    );
 
-                setSubmitted(true);
-                // alert(
-                //     "PDF sent successfully, thank you! If your application is successful, we will be in contact via email."
-                // );
-            } catch (error) {
-                alert("Error sending PDF");
-                console.error(error);
-            } finally {
-                setSending(false);
+                    setSubmitted(true);
+                    // alert(
+                    //     "PDF sent successfully, thank you! If your application is successful, we will be in contact via email."
+                    // );
+                } catch (error) {
+                    alert("Error sending PDF");
+                    console.error(error);
+                } finally {
+                    setSending(false);
+                }
             }
         } else {
             alert("Please select a PDF and fill all relevant fields");
@@ -61,7 +67,11 @@ export default function RecruitmentForm() {
             <section className="h-screen flex flex-col justify-center items-center text-black">
                 {/* Note: The action functionality for form submission is not yet implemented. */}
                 <form
-                    className={`flex flex-col items-start ${submitted ? "absolute opacity-0 transition duration-500 ease-linear" : "opacity-100 z-10"}`}
+                    className={`flex flex-col items-start ${
+                        submitted
+                            ? "absolute opacity-0 transition duration-500 ease-linear"
+                            : "opacity-100 z-10"
+                    }`}
                     action="/submit-form"
                     method="post"
                     onSubmit={handleSubmit}
@@ -109,7 +119,7 @@ export default function RecruitmentForm() {
                         id="fileLabel"
                         className="text-customBlue underline py-2 px-4 cursor-pointer inline-block"
                     >
-                        <span className="-ml-4">Upload</span>
+                        <span className="-ml-4 select-none">Upload</span>
                         <input
                             type="file"
                             className="hidden"
@@ -118,7 +128,10 @@ export default function RecruitmentForm() {
                             accept=".pdf"
                         />
                     </label>
-                    <div id="fileNameDisplay" className="text-black mt-2 text-clip">
+                    <div
+                        id="fileNameDisplay"
+                        className="text-black mt-2 text-clip"
+                    >
                         {file ? `Selected file: ${file.name}` : ""}
                     </div>
                     <br />
@@ -127,17 +140,29 @@ export default function RecruitmentForm() {
                     <input
                         type="submit"
                         value="Submit"
-                        className={`hover:font-bold bg-gray-500 text-white py-2 px-4 rounded w-full ${sending ? "opacity-60" : "opacity-100"}`}
+                        className={`hover:cursor-pointer bg-gray-500 text-white py-2 px-4 rounded w-full ${
+                            sending ? "opacity-60" : "opacity-100"
+                        }`}
                         disabled={sending}
                     />
                 </form>
 
                 {/* /checkmarker */}
-                <div className={`flex flex-col items-center justify-center ${submitted ? "opacity-100 transition duration-1000 ease-linear delay-[800ms]" : "absolute opacity-0"}`}>
-                    <img src={check} className="h-36"/>
+                <div
+                    className={`flex flex-col items-center justify-center ${
+                        submitted
+                            ? "opacity-100 transition duration-1000 ease-linear delay-[800ms]"
+                            : "absolute opacity-0"
+                    }`}
+                >
+                    <img src={check} className="h-36" />
                     <p className="flex flex-col font-light text-4xl mt-10">
-                    <span className="font-bold">You've successfully applied!</span>
-                    <span className="mt-2 w-3/5 text-center mx-auto">We've successfully recieved your application. If your application is successful, we will be in contact via email.</span>
+                        <span className="font-bold">Submitted:</span>
+                        <span className="mt-2 w-3/5 text-center mx-auto">
+                            We have successfully received your resume. Thank you
+                            for indicating your interest in CBX Partners. We
+                            look forward to learning more about you.
+                        </span>
                     </p>
                 </div>
             </section>
