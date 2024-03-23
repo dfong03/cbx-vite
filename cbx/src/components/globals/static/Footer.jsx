@@ -167,7 +167,8 @@ const Footer = () => {
                         Rights Reserved.
                     </p>
                 </div>
-                <div className="flex flex-row col-start-8 ml-20 text-nowrap -mt-6 col-span-3 text-sm gap-2 text-gray-300">
+            </div>
+            <div className="w-full flex flex-row justify-end text-nowrap text-sm gap-2 text-gray-300 oerflow-hidden -mt-6">
                     <div className="hover:underline">
                         <a href="">Legal & Regulatory Information</a>
                     </div>
@@ -176,7 +177,6 @@ const Footer = () => {
                         <a href="">Terms & Conditions</a>
                     </div>
                 </div>
-            </div>
         </footer>
     );
 };
