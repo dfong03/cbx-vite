@@ -17,7 +17,7 @@ const ComingSoon = () => {
                 className="w-screen h-screen"
             >
                 {/* change font */}
-                Coming Spring 2024
+                Coming Fall 2024
             </div>
         </div>
     );
