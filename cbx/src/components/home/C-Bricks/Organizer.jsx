@@ -71,7 +71,7 @@ function Organizer() {
                         Built from the ground up to be different.
                     </h1>
                     <p>
-                        CBX Partners&apos; ethos is two-fold:  — deliver real alpha 
+                        CBX Partners&apos; ethos is two-fold — deliver real alpha 
                         for its limited partners and provide Columbia’s brightest minds 
                         with the direct experience needed to bridge raw talent, will to win, 
                         and a growth mindset into a competitive edge as an investor.
