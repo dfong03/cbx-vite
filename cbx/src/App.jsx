@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/main/Home";
 import ComingSoon from "./pages/ComingSoon";
+import SecretLogo from "./pages/SecretLogo"
 import LPLogin from "./pages/main/LPLogin";
 import ShowCompanies from "./components/team/companies/ShowCompany";
 import Recruiting from "./pages/main/Recruiting";
@@ -28,6 +29,7 @@ function App() {
                     <Route path="/applicationForm" element={<Recruiting />} />
                     <Route path="/lp-login" element={<LPLogin />} />
                     <Route path="/company/:name" element={<ShowCompanies />} />
+                    <Route path="/94F6E5B388EF8986DC378540641195B0" element={<SecretLogo />} />
                 </Routes>
             <div className="bottom-0 w-full z-50">
                 <Footer />
