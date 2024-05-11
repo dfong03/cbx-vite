@@ -74,9 +74,9 @@ const Footer = () => {
                 </div>
                 <div className="col-start-8 mx-3">
                     <ul className="flex items-center">
-                        {/* <li>
+                        {<li>
                             <a
-                                href="www.gmail.com"
+                                href="mailto:info@cbxcapitalpartners.com"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -90,7 +90,7 @@ const Footer = () => {
                                     className="scale-150"
                                 />
                             </a>
-                        </li> */}
+                        </li>}
                         {/* <li>
                             <a
                                 href="www.facebook.com"
@@ -163,12 +163,15 @@ const Footer = () => {
             <div className="grid grid-cols-9 mt-2 text-left">
                 <div className="col-start-1 col-span-8">
                     <p>
+                        Contact: info@cbxcapitalpartners.com
+                    </p>
+                    <p>
                         © {currentYear} CBX Capital Partners Management LLC. All
                         Rights Reserved.
                     </p>
                 </div>
             </div>
-            <div className="w-full flex flex-row justify-end text-nowrap text-sm gap-2 text-gray-300 oerflow-hidden -mt-6">
+            <div className="w-full flex flex-row justify-end text-nowrap text-md gap-2 text-gray-300 oerflow-hidden -mt-6">
                     <div className="hover:underline">
                         <a>Legal & Regulatory Information</a>
                     </div>
