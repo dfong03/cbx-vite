@@ -170,7 +170,7 @@ const Footer = () => {
             </div>
             <div className="w-full flex flex-row justify-end text-nowrap text-sm gap-2 text-gray-300 oerflow-hidden -mt-6">
                     <div className="hover:underline">
-                        <a>Legal & Regulatory Information</a>
+                        <a>Legal Information</a>
                     </div>
                     <span>|</span>
                     <div className="hover:underline">
