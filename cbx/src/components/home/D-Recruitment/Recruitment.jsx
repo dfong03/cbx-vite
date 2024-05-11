@@ -29,7 +29,6 @@ const Recruitment = () => {
                             Investment Team Resume Drop
                             {/* Investment team resume*/}
                         </a>{" "}
-                        | Submit Interest
                     </span>{" "}
                     <br />
                     <span className="sm:text-4xl">
@@ -38,7 +37,6 @@ const Recruitment = () => {
                             Operations Team Resume Drop
                             {/* Investment team resume*/}
                         </a>{" "}
-                        | Submit Interest
                     </span>
                 </div>
             </div>
