@@ -166,7 +166,7 @@ const Footer = () => {
                         Contact: info@cbxcapitalpartners.com
                     </p>
                     <p>
-                        © {currentYear} CBX Capital Partners Management LLC. All
+                        © {currentYear} CBX Capital Partners Management, L.L.C. All
                         Rights Reserved.
                     </p>
                 </div>

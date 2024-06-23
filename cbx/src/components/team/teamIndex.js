@@ -1,12 +1,11 @@
 import profile from "./profiles/CBX_Black.png";
-import martenson from "./profiles/headshot_Martenson.png"
 let people = [
     {
-        name: "Matt DeSantis",
+        name: "Matthew DeSantis",
         names: [],
         profile: profile,
         teams: ["investment"],
-        title: "Managing Partner & Investor",
+        title: "Managing Partner",
         redirect: "",
         description:""
     },
@@ -15,11 +14,11 @@ let people = [
         names: [],
         profile: profile,
         teams: ["investment"],
-        title: "Sourcing Head & Investor",
+        title: "Sourcing Head",
         redirect: "",
         description:""
     },    {
-        name: "Phillip",
+        name: "Phillip Bardon",
         names: [],
         profile: profile,
         teams: ["investment"],
@@ -27,7 +26,7 @@ let people = [
         redirect: "",
         description:""
     },    {
-        name: "Romula",
+        name: "Romola Cavet",
         names: [],
         profile: profile,
         teams: ["investment"],
@@ -57,7 +56,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations"],
-        title: "",
+        title: "Capital Formation",
         redirect: "",
         description:""
     },    {
@@ -65,7 +64,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations"],
-        title: "",
+        title: "Capital Formation",
         redirect: "",
         description:""
     },
@@ -74,7 +73,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations"],
-        title: "",
+        title: "Capital Formation",
         redirect: "",
         description:""
     },
@@ -92,7 +91,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations"],
-        title: "",
+        title: "Comms & Engineering",
         redirect: "",
         description:""
     },
@@ -102,22 +101,6 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Quantitative Strategies",
-        redirect: "",
-        description:""
-    },    {
-        name: "",
-        names: [],
-        profile: profile,
-        teams: ["advisors"],
-        title: "",
-        redirect: "",
-        description:""
-    },    {
-        name: "",
-        names: [],
-        profile: profile,
-        teams: ["advisors"],
-        title: "",
         redirect: "",
         description:""
     },
