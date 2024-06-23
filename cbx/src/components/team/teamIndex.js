@@ -6,7 +6,8 @@ let people = [
         profile: profile,
         teams: ["investment"],
         title: "Managing Partner",
-        redirect: "",
+        subtitle: "Investor",
+        redirect: "https://www.linkedin.com/in/desantismatt/",
         description:""
     },
     {
@@ -15,7 +16,8 @@ let people = [
         profile: profile,
         teams: ["investment"],
         title: "Sourcing Head",
-        redirect: "",
+        subtitle: "Investor",
+        redirect: "https://www.linkedin.com/in/john-graziano-1805bba5/",
         description:""
     },    {
         name: "Phillip Bardon",
@@ -23,7 +25,8 @@ let people = [
         profile: profile,
         teams: ["investment"],
         title: "Investor",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/philip-b-b19570236/",
         description:""
     },    {
         name: "Romola Cavet",
@@ -31,7 +34,8 @@ let people = [
         profile: profile,
         teams: ["investment"],
         title: "Investor",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/romola-cavet/",
         description:""
     },
     {
@@ -40,7 +44,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Staffer",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/fong-derek/",
         description:""
     },
     {
@@ -49,7 +54,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Director",
-        redirect: "",
+        subtitle: "Capital Formation",
+        redirect: "https://www.linkedin.com/in/bassbrendan/",
         description:""
     },    {
         name: "Will Goldberg",
@@ -57,7 +63,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Capital Formation",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/williamgoldberg8/",
         description:""
     },    {
         name: "Sam Count",
@@ -65,7 +72,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Capital Formation",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/samuel-count89/",
         description:""
     },
     {
@@ -74,7 +82,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Capital Formation",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/isabelgurney/",
         description:""
     },
     {
@@ -83,6 +92,7 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Director",
+        subtitle: "",
         redirect: "",
         description:""
     },
@@ -92,7 +102,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Comms & Engineering",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/bao-to-54621b19b/",
         description:""
     },
     {
@@ -101,7 +112,8 @@ let people = [
         profile: profile,
         teams: ["operations"],
         title: "Quantitative Strategies",
-        redirect: "",
+        subtitle: "",
+        redirect: "https://www.linkedin.com/in/gabrieltoh/",
         description:""
     },
     // {

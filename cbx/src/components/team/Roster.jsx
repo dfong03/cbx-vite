@@ -14,7 +14,7 @@ const Roster = ({ aspect, setAspect }) => {
     }
 
     function namesearch(profile) {
-        for (const name in profile.names) {
+        for (const name of profile.names) {
             if (profile.names[name].startsWith(aspect.toLowerCase())) {
                 return true;
             }
@@ -23,8 +23,8 @@ const Roster = ({ aspect, setAspect }) => {
     }
 
     function profileClick(person) {
-        //navigate to a NEW PAGE with that
-        nav("/team/" + person.redirect);
+        //navigate to respective LinkedIn Page
+        window.location.href = person.redirect;
     }
 
     return (
@@ -185,6 +185,7 @@ const Roster = ({ aspect, setAspect }) => {
                                 {tab.name}
                             </span>
                             <span className="text-xl">{tab.title}</span>
+                            <span className="text-xl">{tab.subtitle}</span>
                         </div>
                         <div className="w-full flex flex-row justify-end items-center -mt-6 mb-4">
                             <img
