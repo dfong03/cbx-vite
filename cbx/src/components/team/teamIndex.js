@@ -2,41 +2,66 @@ import profile from "./profiles/CBX_Black.png";
 import martenson from "./profiles/headshot_Martenson.png"
 let people = [
     {
-        name: "",
+        name: "Matt DeSantis",
         names: [],
         profile: profile,
         teams: ["investment"],
-        title: "",
+        title: "Managing Partner & Investor",
         redirect: "",
         description:""
     },
     {
-        name: "",
+        name: "John Graziano",
         names: [],
         profile: profile,
         teams: ["investment"],
-        title: "",
+        title: "Sourcing Head & Investor",
         redirect: "",
         description:""
     },    {
-        name: "",
+        name: "Phillip",
         names: [],
         profile: profile,
         teams: ["investment"],
-        title: "",
+        title: "Investor",
         redirect: "",
         description:""
     },    {
-        name: "",
+        name: "Romula",
         names: [],
         profile: profile,
         teams: ["investment"],
-        title: "",
+        title: "Investor",
         redirect: "",
         description:""
     },
     {
-        name: "",
+        name: "Derek Fong",
+        names: [],
+        profile: profile,
+        teams: ["operations"],
+        title: "Staffer",
+        redirect: "",
+        description:""
+    },
+    {
+        name: "Brendan Bass",
+        names: [],
+        profile: profile,
+        teams: ["operations"],
+        title: "Director",
+        redirect: "",
+        description:""
+    },    {
+        name: "Will Goldberg",
+        names: [],
+        profile: profile,
+        teams: ["operations"],
+        title: "",
+        redirect: "",
+        description:""
+    },    {
+        name: "Sam Count",
         names: [],
         profile: profile,
         teams: ["operations"],
@@ -45,23 +70,7 @@ let people = [
         description:""
     },
     {
-        name: "",
-        names: [],
-        profile: profile,
-        teams: ["operations"],
-        title: "",
-        redirect: "",
-        description:""
-    },    {
-        name: "",
-        names: [],
-        profile: profile,
-        teams: ["operations"],
-        title: "",
-        redirect: "",
-        description:""
-    },    {
-        name: "",
+        name: "Isabel Gurney",
         names: [],
         profile: profile,
         teams: ["operations"],
@@ -70,20 +79,29 @@ let people = [
         description:""
     },
     {
-        name: "",
+        name: "Michael Roberson",
         names: [],
         profile: profile,
-        teams: ["advisors"],
+        teams: ["operations"],
+        title: "Director",
+        redirect: "",
+        description:""
+    },
+    {
+        name: "Bao To",
+        names: [],
+        profile: profile,
+        teams: ["operations"],
         title: "",
         redirect: "",
         description:""
     },
     {
-        name: "",
+        name: "Gabriel Toh",
         names: [],
         profile: profile,
-        teams: ["advisors"],
-        title: "",
+        teams: ["operations"],
+        title: "Quantitative Strategies",
         redirect: "",
         description:""
     },    {
