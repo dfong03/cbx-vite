@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { people } from "./teamIndex";
 import arrow from "./arrow.svg";
 import { useNavigate } from "react-router-dom";
 
 const Roster = ({ aspect, setAspect }) => {
+    const [searchTerm, setSearchTerm] = useState("");
     const nav = useNavigate();
-    //aspect is a string
+
     function filter(profile) {
         if (aspect === "all") {
             return true;
@@ -14,22 +15,24 @@ const Roster = ({ aspect, setAspect }) => {
     }
 
     function namesearch(profile) {
-        for (const name of profile.names) {
-            if (profile.names[name].startsWith(aspect.toLowerCase())) {
-                return true;
-            }
-        }
-        return false;
+        return profile.name.toLowerCase().includes(searchTerm.toLowerCase());
     }
 
     function profileClick(person) {
-        //navigate to respective LinkedIn Page
         window.location.href = person.redirect;
     }
 
     return (
         <section className={`bg-gray-100 w-3/4 flex flex-col justify-start items-center text-black text-4xl absolute`}>
             <div className="mt-24 w-full ml-16">
+                <input
+                    type="text"
+                    className="border p-2 text-black w-full"
+                    placeholder="Search by name"
+                    value={searchTerm}
+                    //onInput={e=>{handleInput(e.target.value)}}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
                 <div
                     className={`mb-4 text-sm flex flex-row w-full gap-3 ${
                         aspect.toLowerCase() == "advisors" ||
@@ -41,8 +44,8 @@ const Roster = ({ aspect, setAspect }) => {
                 >
                     <button
                         className="h-8 text-black border-black border-2 px-2 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
                         onClick={() => {
                             setAspect("advisory-board");
                         }}
@@ -51,8 +54,8 @@ const Roster = ({ aspect, setAspect }) => {
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
                         onClick={() => {
                             setAspect("tech-board");
                         }}
@@ -68,67 +71,108 @@ const Roster = ({ aspect, setAspect }) => {
                         aspect.toLowerCase() == "operations" ||
                         aspect.toLowerCase() == "communications" ||
                         aspect.toLowerCase() == "legal" ||
-                        aspect.toLowerCase() == "portfolio"
+                        aspect.toLowerCase() == "portfolio" ||
+                        aspect.toLowerCase() == "investor" ||
+                        aspect.toLowerCase() == "director" ||
+                        aspect.toLowerCase() == "capital-formation" ||
+                        aspect.toLowerCase() == "portfolio-growth" ||
+                        aspect.toLowerCase() == "comms-engineering" ||
+                        aspect.toLowerCase() == "quant-strategies" ||
+                        aspect.toLowerCase() == "talent-search" ||
+                        aspect.toLowerCase() == "compliance" ||
+                        aspect.toLowerCase() == "advisor" 
                             ? "visible"
                             : "hidden"
                     }`}
+                    
                 >
                     <button
                         className="h-8 text-black border-black border-2 px-2
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
                         onClick={() => {
-                            setAspect("operations");
+                            setAspect("director");
                         }}
+                    >
+                        STAFFER
+                    </button>
+
+                    <button
+                        className="h-8 text-black border-black border-2 px-2
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
+                        onClick={() => {
+                            setAspect("director");
+                        }}
+                    >
+                        DIRECTOR
+                    </button>
+
+                    <button
+                        className="h-8 text-black border-black border-2 px-2
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                        
+                        onClick={() => {
+                            setAspect("capital-formation");
+                        }}
+                        style={{ height: "45px" }} // Adjust height as needed
                     >
                         CAPITAL FORMATION
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
                         onClick={() => {
-                            setAspect("operations");
+                            setAspect("portfolio-growth");
                         }}
                     >
                         PORTFOLIO GROWTH
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
                         onClick={() => {
-                            setAspect("operations");
+                            setAspect("comms-engineering");
                         }}
                     >
                         COMMS & ENGINEERING
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
                         onClick={() => {
-                            setAspect("operations");
+                            setAspect("quant-strategies");
                         }}
                     >
                         QUANTITATIVE STRATEGIES
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
                         onClick={() => {
-                            setAspect("operations");
+                            setAspect("talent-search");
                         }}
                     >
                         TALENT SEARCH
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
+                            style={{ height: "45px" }} // Adjust height as needed
                         onClick={() => {
-                            setAspect("operations");
+                            setAspect("compliance");
                         }}
                     >
                         COMPLIANCE
@@ -150,8 +194,8 @@ const Roster = ({ aspect, setAspect }) => {
                 >
                     <button
                         className="h-8 text-black border-black border-2 px-2 
-                                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                                          hover:text-white transition duration-500 ease-in-out"
+                            tracking-wide font-semibold hover:border-transparent hover:bg-black
+                            hover:text-white transition duration-500 ease-in-out"
                         onClick={() => {
                             setAspect("investment");
                         }}
@@ -161,12 +205,14 @@ const Roster = ({ aspect, setAspect }) => {
                 </div>
             </div>
 
+
             {/* Profiles */}
             <div className="w-full h-full grid grid-cols-4 overflow-hidden px-4">
                 {people.map((tab) => (
                     <div
+                        key={tab.name}
                         className={`${
-                            filter(tab) || namesearch(tab)
+                            filter(tab) && namesearch(tab)
                                 ? "visible"
                                 : "hidden"
                         } m-4 rounded-md overflow-hidden hover:cursor-pointer group`}
