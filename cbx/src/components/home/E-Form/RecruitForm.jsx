@@ -139,7 +139,7 @@ export default function RecruitmentForm() {
 
                     <input
                         type="submit"
-                        value="Submit"
+                        value={sending ? "Sending..." : "Submit"}
                         className={`hover:cursor-pointer bg-gray-500 text-white py-2 px-4 rounded w-full ${
                             sending ? "opacity-60" : "opacity-100"
                         }`}
