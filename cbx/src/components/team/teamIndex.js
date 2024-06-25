@@ -92,7 +92,7 @@ let people = [
         profile: profile,
         teams: ["operations", "director"],
         title: "Director",
-        subtitle: "",
+        subtitle: "Comms & Engineering",
         redirect: "",
         description:""
     },
