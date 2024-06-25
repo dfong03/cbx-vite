@@ -51,7 +51,7 @@ export default function RecruitmentForm() {
                     //     "PDF sent successfully, thank you! If your application is successful, we will be in contact via email."
                     // );
                 } catch (error) {
-                    alert("Error sending PDF, please wait a bit and press 'Submit' again");
+                    alert("Check your email. If you have not received a confirmation, please press 'Submit' again.");
                     console.error(error);
                 } finally {
                     setSending(false);
