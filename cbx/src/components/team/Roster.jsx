@@ -90,30 +90,6 @@ const Roster = ({ aspect, setAspect }) => {
                         className="h-8 text-black border-black border-2 px-2
                             tracking-wide font-semibold hover:border-transparent hover:bg-black
                             hover:text-white transition duration-500 ease-in-out"
-                            style={{ height: "45px" }} // Adjust height as needed
-                        onClick={() => {
-                            setAspect("director");
-                        }}
-                    >
-                        STAFFER
-                    </button>
-
-                    <button
-                        className="h-8 text-black border-black border-2 px-2
-                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                            hover:text-white transition duration-500 ease-in-out"
-                            style={{ height: "45px" }} // Adjust height as needed
-                        onClick={() => {
-                            setAspect("director");
-                        }}
-                    >
-                        DIRECTOR
-                    </button>
-
-                    <button
-                        className="h-8 text-black border-black border-2 px-2
-                            tracking-wide font-semibold hover:border-transparent hover:bg-black
-                            hover:text-white transition duration-500 ease-in-out"
                         
                         onClick={() => {
                             setAspect("capital-formation");
@@ -131,7 +107,7 @@ const Roster = ({ aspect, setAspect }) => {
                             setAspect("portfolio-growth");
                         }}
                     >
-                        PORTFOLIO GROWTH
+                        DILIGENCE & GROWTH
                     </button>
                     <button
                         className="h-8 text-black border-black border-2 px-2 
