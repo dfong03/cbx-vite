@@ -69,7 +69,16 @@ let people = [
         redirect: "https://www.linkedin.com/in/fong-derek/",
         description:""
     },
-   {
+    {
+        name: "Brendan Bass",
+        names: [],
+        profile: profile,
+        teams: ["operations","capital-formation"],
+        title: "Director",
+        subtitle: "Capital Formation",
+        redirect: "https://www.linkedin.com/in/bassbrendan/",
+        description:""
+    },    {
         name: "Will Goldberg",
         names: [],
         profile: profile,
@@ -96,6 +105,16 @@ let people = [
         title: "Capital Formation",
         subtitle: "",
         redirect: "https://www.linkedin.com/in/isabelgurney/",
+        description:""
+    },
+    {
+        name: "Michael Roberson",
+        names: [],
+        profile: profile,
+        teams: ["operations", "comms-engineering"],
+        title: "Director",
+        subtitle: "Comms & Engineering",
+        redirect: "",
         description:""
     },
     {
