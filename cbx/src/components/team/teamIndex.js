@@ -19,7 +19,8 @@ let people = [
         subtitle: "Investor",
         redirect: "https://www.linkedin.com/in/john-graziano-1805bba5/",
         description:""
-    },    {
+    },    
+    {
         name: "Phillip Bardon",
         names: [],
         profile: profile,
@@ -39,6 +40,26 @@ let people = [
         description:""
     },
     {
+        name: "Brendan Bass",
+        names: [],
+        profile: profile,
+        teams: ["operations","capital-formation"],
+        title: "Director",
+        subtitle: "Capital Formation",
+        redirect: "https://www.linkedin.com/in/bassbrendan/",
+        description:""
+    }, 
+    {
+        name: "Michael Roberson",
+        names: [],
+        profile: profile,
+        teams: ["operations", "comms-engineering"],
+        title: "Director",
+        subtitle: "Comms & Engineering",
+        redirect: "",
+        description:""
+    },
+    {
         name: "Derek Fong",
         names: [],
         profile: profile,
@@ -48,16 +69,7 @@ let people = [
         redirect: "https://www.linkedin.com/in/fong-derek/",
         description:""
     },
-    {
-        name: "Brendan Bass",
-        names: [],
-        profile: profile,
-        teams: ["operations","capital-formation"],
-        title: "Director",
-        subtitle: "Capital Formation",
-        redirect: "https://www.linkedin.com/in/bassbrendan/",
-        description:""
-    },    {
+   {
         name: "Will Goldberg",
         names: [],
         profile: profile,
@@ -84,16 +96,6 @@ let people = [
         title: "Capital Formation",
         subtitle: "",
         redirect: "https://www.linkedin.com/in/isabelgurney/",
-        description:""
-    },
-    {
-        name: "Michael Roberson",
-        names: [],
-        profile: profile,
-        teams: ["operations", "comms-engineering"],
-        title: "Director",
-        subtitle: "Comms & Engineering",
-        redirect: "",
         description:""
     },
     {
