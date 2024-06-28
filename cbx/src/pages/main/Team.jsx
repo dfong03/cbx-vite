@@ -10,7 +10,7 @@ const Team = () => {
                     <div className="w-1/4 h-[150vh] absolute">
                         <VerticalMenu currentFilter={currentFilter} setFilter={setFilter}/>
                     </div>
-                    <div className="ml-[25vw] w-3/4 h-full relative z-10">
+                    <div className="ml-[25vw] w-3/4 h-full relative z-1">
                         <Roster aspect={currentFilter} setAspect={setFilter}/>
                     </div>
                 </div>
