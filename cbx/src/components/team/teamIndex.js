@@ -53,7 +53,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations","capital-formation"],
-        title: "Director",
+        title: "Capital Formation",
         subtitle: "Capital Formation",
         redirect: "https://www.linkedin.com/in/bassbrendan/",
         description:""
@@ -91,7 +91,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations", "comms-engineering"],
-        title: "Director",
+        title: "Comms & Engineering",
         subtitle: "Comms & Engineering",
         redirect: "",
         description:""
