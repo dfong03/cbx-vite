@@ -54,7 +54,7 @@ let people = [
         profile: profile,
         teams: ["operations","capital-formation"],
         title: "Capital Formation",
-        subtitle: "Capital Formation",
+        subtitle: "",
         redirect: "https://www.linkedin.com/in/bassbrendan/",
         description:""
     },    {
@@ -92,7 +92,7 @@ let people = [
         profile: profile,
         teams: ["operations", "comms-engineering"],
         title: "Comms & Engineering",
-        subtitle: "Comms & Engineering",
+        subtitle: "",
         redirect: "",
         description:""
     },
