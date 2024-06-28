@@ -44,41 +44,22 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations","capital-formation"],
-        title: "Director",
-        subtitle: "Capital Formation",
+        title: "Capital Formation",
+        subtitle: "",
         redirect: "https://www.linkedin.com/in/bassbrendan/",
         description:""
     }, 
-    {
-        name: "Michael Roberson",
-        names: [],
-        profile: profile,
-        teams: ["operations", "comms-engineering"],
-        title: "Director",
-        subtitle: "Comms & Engineering",
-        redirect: "",
-        description:""
-    },
     {
         name: "Derek Fong",
         names: [],
         profile: profile,
         teams: ["operations"],
-        title: "Staffer",
+        title: "",
         subtitle: "",
         redirect: "https://www.linkedin.com/in/fong-derek/",
         description:""
     },
     {
-        name: "Brendan Bass",
-        names: [],
-        profile: profile,
-        teams: ["operations","capital-formation"],
-        title: "Director",
-        subtitle: "Capital Formation",
-        redirect: "https://www.linkedin.com/in/bassbrendan/",
-        description:""
-    },    {
         name: "Will Goldberg",
         names: [],
         profile: profile,
@@ -87,7 +68,8 @@ let people = [
         subtitle: "",
         redirect: "https://www.linkedin.com/in/williamgoldberg8/",
         description:""
-    },    {
+    },    
+    {
         name: "Sam Count",
         names: [],
         profile: profile,
@@ -114,7 +96,7 @@ let people = [
         teams: ["operations", "comms-engineering"],
         title: "Director",
         subtitle: "Comms & Engineering",
-        redirect: "",
+        redirect: "https://www.linkedin.com/in/michael-h-roberson/",
         description:""
     },
     {
