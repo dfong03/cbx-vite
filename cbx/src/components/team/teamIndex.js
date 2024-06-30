@@ -44,8 +44,8 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations","capital-formation"],
-        title: "Capital Formation",
-        subtitle: "",
+        title: "Director",
+        subtitle: "Capital Formation",
         redirect: "https://www.linkedin.com/in/bassbrendan/",
         description:""
     }, 
@@ -54,7 +54,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["operations"],
-        title: "",
+        title: "Staffer",
         subtitle: "",
         redirect: "https://www.linkedin.com/in/fong-derek/",
         description:""
