@@ -24,10 +24,10 @@ const Roster = ({ aspect, setAspect }) => {
 
     return (
         <section className={`bg-gray-100 w-3/4 flex flex-col justify-start items-center text-black text-4xl absolute`}>
-            <div className="mt-24 w-full ml-16">
+            <div className="mt-24 w-full ml-4 mr-4">
                 <input
                     type="text"
-                    className="border p-2 text-black w-full"
+                    className="border p-2 text-black w-full "
                     placeholder="Search by name"
                     value={searchTerm}
                     //onInput={e=>{handleInput(e.target.value)}}

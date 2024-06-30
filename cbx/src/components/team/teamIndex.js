@@ -50,6 +50,16 @@ let people = [
         description:""
     }, 
     {
+        name: "Michael Roberson",
+        names: [],
+        profile: profile,
+        teams: ["operations", "comms-engineering"],
+        title: "Director",
+        subtitle: "Comms & Engineering",
+        redirect: "https://www.linkedin.com/in/michael-h-roberson/",
+        description:""
+    },
+    {
         name: "Derek Fong",
         names: [],
         profile: profile,
@@ -87,16 +97,6 @@ let people = [
         title: "Capital Formation",
         subtitle: "",
         redirect: "https://www.linkedin.com/in/isabelgurney/",
-        description:""
-    },
-    {
-        name: "Michael Roberson",
-        names: [],
-        profile: profile,
-        teams: ["operations", "comms-engineering"],
-        title: "Director",
-        subtitle: "Comms & Engineering",
-        redirect: "https://www.linkedin.com/in/michael-h-roberson/",
         description:""
     },
     {
