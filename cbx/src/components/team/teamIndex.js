@@ -15,7 +15,7 @@ let people = [
         names: [],
         profile: profile,
         teams: ["investment","sourcing-head"],
-        title: "Sourcing Head",
+        title: "Partner",
         subtitle: "Investor",
         redirect: "https://www.linkedin.com/in/john-graziano-1805bba5/",
         description:""
