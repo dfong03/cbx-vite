@@ -11,7 +11,7 @@ const Home = () => {
             <TransitionA />
             <Metrics />
             <Organizer />
-            <Recruitment />
+            
         </div>
     );
 };

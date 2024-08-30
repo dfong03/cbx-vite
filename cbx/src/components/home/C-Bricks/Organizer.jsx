@@ -71,15 +71,7 @@ function Organizer() {
                         Built from the ground up to be different.
                     </h1>
                     <p>
-                        CBX Partners&apos; ethos is two-fold — deliver real alpha 
-                        for its limited partners and provide Columbia’s brightest minds 
-                        with the direct experience needed to bridge raw talent, will to win, 
-                        and a growth mindset into a competitive edge as an investor.
-                        <br />
-                        <br />
-                        We’re not a club. We don’t exist for resume padding.
-                        We’re a place where people who are not cut from the
-                        average cloth can go to build momentum.
+                    Our objective is two-fold — deliver alpha for our limited partners and close the delta for Columbia’s most talented undergrads with the direct experience needed to bridge obsessive curiosity, will to win, and an acceleration mindset into a competitive edge as an investor.
                     </p>
                 </div>
             </div>
@@ -91,19 +83,8 @@ function Organizer() {
                     </h1>
                     <div className="my-24 px-4 text-xl">
                         <p>
-                            CBX Partners&apos; ethos is two-fold: deliver alpha
-                            for its investors and provide select Columbia
-                            undergraduates with the investing intuition and
-                            competitive edge needed to dominate careers at the
-                            world’s leading investment and strategic advisory
-                            firms.
-                        </p>
-                        <br />
-                        <br />
-                        <p className="text-center mt-8">
-                            We’re not a club. We don’t exist for resume padding.
-                            We’re a place where people who are not cut from the
-                            average cloth can go to build momentum.
+                        Our objective is two-fold — deliver alpha for our limited partners and close the delta for Columbia’s most talented undergrads with the direct experience needed to bridge obsessive curiosity, will to win, and an acceleration mindset into a competitive edge as an investor.
+                      
                         </p>
                     </div>
                 </div>

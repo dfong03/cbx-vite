@@ -119,10 +119,7 @@ const Metrics = () => {
             >
                 <div className="absolute sm:w-[50vw] w-[100vw] sm:h-1/2 h-full sm:mt-[30vh] ml-0 flex flex-col sm:justify-start justify-center sm:items-start items-center font-bold text-white text-center text-2xl ">
                     <p className="sm:w-3/4 w-full sm:rounded-none rounded-md bg-opacity-60 sm:p-0 p-4">
-                        Founded in 2023, CBX Partners is the first buyout mandated undergraduate-run{" "}
-                        private equity firm in the world, managed exclusively by Columbia undergraduates. 
-                        CBX Partners makes co-investments across global Tech, Services, Industrials, Media/Comms, 
-                        and Healthcare buyout transactions alongside partner private investment firms.
+                    Founded in 2023, CBX Capital Partners Management LLC (“CBX Partners”) is a private equity firm managed exclusively by Columbia undergrads. Through our managed funds, we back ambitious, growth oriented companies alongside sponsors, making co-investments across global Tech, Services, Industrials, Media/Comms, and Healthcare buyouts.
                     </p>
                 </div>
             </div>
